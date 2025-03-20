@@ -4,7 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello, World!<br>Saya Salma Salsabila dari Universitas Brawijaya"
+    return '''
+        <h1>Hello World!</h1>
+        <p>Saya Salma Salsabila dari Universitas Brawijaya</p>
+        <a href="/form">Go to Form</a>
+    '''
 
 @app.route('/form', methods=['GET', 'POST'])
 def form():
